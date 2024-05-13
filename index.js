@@ -1,13 +1,15 @@
-// The console allows you to print and view JavaScript output. You can send information to the console using console.log(). For example, this code will print "Naomi" to the console:
+// When a variable is declared with the let keyword, you can reassign (or change the value of) that variable later on. In this example, the value of programmer is changed from "Naomi" to "CamperChan".
 
-// let developer = "Naomi";
+// let programmer = "Naomi";
 
-// console.log(developer);
+// programmer = "CamperChan";
 
-// The code above accesses the developer variable with its name in the console.log(). Note that the value between the parentheses is the value that will be printed.
+// Note that when reassigning a variable that has already been declared, you do not use the let keyword.
 
-// Print the value of the character variable to the console. Then, click the "Console" button to view the JavaScript console.
+// After your console.log, assign the value "World" to your character variable.
 
 let character = 'Hello';
+
+character = 'World';
 
 console.log(character);
