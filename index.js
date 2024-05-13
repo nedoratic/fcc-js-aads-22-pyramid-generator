@@ -1,9 +1,7 @@
-// Your character variable currently does not have a value. You can assign a value using the assignment operator =. For example:
+// JavaScript has seven primitive data types, with String being one of them. In JavaScript, a string represents a sequence of characters and can be enclosed in either single (') or double (") quotes.
 
-// let hello = "Hello";
+// Note that strings are immutable, which means once they are created, they cannot be changed.
 
-// Assigning a value to a variable at the moment of its declaration is known as initialization.
-
-// Initialize your character variable by assigning it the value "Hello" during its declaration.
+// Change your "Hello" string to use single quotes.
 
 let character = 'Hello';
