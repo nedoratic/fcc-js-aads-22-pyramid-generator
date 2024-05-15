@@ -1,10 +1,8 @@
-// A method in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the .log() method, which is part of the console object.
+// Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
 
-// Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array. Here is an example to add the number 12 to the end of an array:
+// When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.
 
-// array.push(12);
-
-// Use .push() to add the string "freeCodeCamp" to the end of your rows array. Add this code before your console.log so you can see the change you made to your array.
+// Create a new variable called popped and assign it the result of rows.pop(). Then, log popped to the console.
 
 let character = 'Hello';
 
@@ -14,4 +12,6 @@ let rows = ['Naomi', 'Quincy', 'CamperChan'];
 
 rows.push('freeCodeCamp');
 
-console.log(rows);
+let popped = rows.pop();
+
+console.log(popped);
