@@ -1,16 +1,10 @@
-// Notice how the value inside your rows array has been changed directly? This is called mutation. As you learn more about arrays, you will learn when to mutate an array, and when you should not.
+// A method in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the .log() method, which is part of the console object.
 
-// Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with rows[2]. But you may not know how many elements are in an array when you want the last one.
+// Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array. Here is an example to add the number 12 to the end of an array:
 
-// You can make use of the .length property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:
+// array.push(12);
 
-// array[array.length - 1]
-
-// array.length returns the number of elements in the array. By subtracting 1, you get the index of the last element in the array. You can apply this same concept to your rows array.
-
-// Update your rows[2] to dynamically access the last element in the rows array. Refer to the example above to help you.
-
-// You should not see anything change in your console.
+// Use .push() to add the string "freeCodeCamp" to the end of your rows array. Add this code before your console.log so you can see the change you made to your array.
 
 let character = 'Hello';
 
@@ -18,8 +12,6 @@ let count = 8;
 
 let rows = ['Naomi', 'Quincy', 'CamperChan'];
 
-console.log(rows[0]);
-
-rows[rows.length - 1] = 10;
+rows.push('freeCodeCamp');
 
 console.log(rows);
