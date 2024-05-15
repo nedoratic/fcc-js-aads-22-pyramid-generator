@@ -1,17 +1,13 @@
-// In programming, you will often need to work with lots of data. There are many data structures that can help you organize and manage your data. One of the most basic data structures is an array.
+// You can access the values inside an array using the index of the value. An index is a number representing the position of the value in the array, starting from 0 for the first value.
 
-// An array is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.
+// You can access the value using bracket notation, such as array[0].
 
-// Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
-
-// let array = [];
-
-// Declare a rows variable and assign it an empty array.
+// Use console.log and bracket notation to print the first value in your rows array.
 
 let character = 'Hello';
 
 let count = 8;
 
-let rows = [];
+let rows = ['Naomi', 'Quincy', 'CamperChan'];
 
-console.log(count + 1);
+console.log(rows[0]);
