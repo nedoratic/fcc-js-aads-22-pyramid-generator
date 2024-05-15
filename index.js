@@ -1,13 +1,7 @@
-// When you declare a variable without initializing it, it is considered uninitialized. Currently, your secondCharacter variable is uninitialized.
+// Use let to declare a count variable. Assign it the number 8. When using a number value, you do not use quotes. For example:
 
-// Add a console.log() to see what the value of your secondCharacter variable is.
+// let money = 100;
 
 let character = 'Hello';
 
-character = 'World';
-
-console.log(character);
-
-let secondCharacter;
-
-console.log(secondCharacter);
+let count = 8;
