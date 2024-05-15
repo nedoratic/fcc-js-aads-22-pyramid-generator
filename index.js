@@ -1,13 +1,6 @@
-// When variable names are more than one word, there are specific naming conventions for how you capitalize the words. In JavaScript, the convention to use is camel case.
+// When you declare a variable without initializing it, it is considered uninitialized. Currently, your secondCharacter variable is uninitialized.
 
-// Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. Here are some examples of camel case:
-
-// let variableOne;
-// let secondVariable;
-// let yetAnotherVariable;
-// let thisIsAnAbsurdlyLongName;
-
-// Use camel case to declare a new secondCharacter variable.
+// Add a console.log() to see what the value of your secondCharacter variable is.
 
 let character = 'Hello';
 
@@ -16,3 +9,5 @@ character = 'World';
 console.log(character);
 
 let secondCharacter;
+
+console.log(secondCharacter);
