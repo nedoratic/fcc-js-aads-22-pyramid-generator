@@ -1,17 +1,21 @@
-// Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+// Declaring a variable with the const keyword allows it to be reassigned. This means you could change character later to be a completely different value.
 
-// When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.
+// For this project, you will not want to change these variable values. So instead, you should use const to declare them. const variables are special.
 
-// Create a new variable called popped and assign it the result of rows.pop(). Then, log popped to the console.
+// First, a const variable cannot be reassigned like a let variable. This code would throw an error:
 
-let character = 'Hello';
+// const firstName = "Naomi";
 
-let count = 8;
+// firstName = "Jessica";
 
-let rows = ['Naomi', 'Quincy', 'CamperChan'];
+// A const variable also cannot be uninitialized. This code would throw an error:
 
-rows.push('freeCodeCamp');
+// const firstName;
 
-let popped = rows.pop();
+// Replace your let keywords with const.
 
-console.log(popped);
+const character = 'Hello';
+
+const count = 8;
+
+const rows = [];
