@@ -16,18 +16,19 @@ for (const row of rows) {
 
 console.log(result);
 
-// The logic for formatting this pyramid is likely going to get complicated, which means it's a great time to extract that code into a function.
+// Your call variable has an undefined value, even though you defined it! This is because your padRow function does not currently return a value. By default, functions return undefined as their value.
 
-// A function is a block of code that can be reused throughout your application. Functions are declared with the following syntax:
+// In order to return something else, you need to use the return keyword. Here is an example of a function that returns the string "Functions are cool!":
 
-// function name(parameter) {
-
+// function demo() {
+//   return "Functions are cool!";
 // }
-// The function keyword tells JavaScript that the name variable is going to be a function. parameter is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, parameters as you'd like. Like a for loop, the space between the curly braces is the function body.
 
-// Declare a padRow function. Do not create any parameter variables yet. The function body should be empty. Remember that you need to use camel case for your naming convention.
+// Use the return keyword to have your function return the string "Hello!".
 
-function padRow() {}
+function padRow() {
+	return 'Hello!';
+}
 
 const call = padRow();
 
