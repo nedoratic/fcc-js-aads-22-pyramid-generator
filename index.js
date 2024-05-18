@@ -16,17 +16,19 @@ for (const row of rows) {
 
 console.log(result);
 
-// Your call variable has an undefined value, even though you defined it! This is because your padRow function does not currently return a value. By default, functions return undefined as their value.
+// When you have a value that is explicitly written in your code, like the "Hello!" string in your function, it is considered to be hard-coded. Hard-coding a value inside a function might not make it as reusable as you'd like.
 
-// In order to return something else, you need to use the return keyword. Here is an example of a function that returns the string "Functions are cool!":
+// Instead, you can define parameters for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.
 
-// function demo() {
-//   return "Functions are cool!";
+// To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this demo function has a name parameter:
+
+// function demo(name) {
+
 // }
 
-// Use the return keyword to have your function return the string "Hello!".
+// name sounds like a useful parameter, so go ahead and add it to your padRow function.
 
-function padRow() {
+function padRow(name) {
 	return 'Hello!';
 }
 
