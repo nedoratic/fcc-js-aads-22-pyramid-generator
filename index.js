@@ -16,15 +16,19 @@ for (const row of rows) {
 
 console.log(result);
 
-// There is a bit of a problem, here. Your test declaration is currently after your return statement. An important thing to know about the return keyword is that it does not just define a value to be returned from your function, it also stops the execution of your function code. This means that any code after a return statement will not run.
+// If you try to add a console.log(test) call below your padRow function, you would see an error. This is because test is defined in the local scope, meaning you cannot access it in the global scope (outside of the padRow function).
 
-// Move your test initialization to the line above your return statement.
+// Returning a value from a function brings that value into the scope where the function was called. To bring your "Testing" value from the padRow function into the global scope, update your return statement to return only the test variable.
+
+// Now your call variable has the value "Testing". But your function is no longer using the name parameter.
+
+// Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
 
 function padRow(name) {
 	const test = 'Testing';
-	return character + name;
+	return test;
 }
 
-const call = padRow('CamperChan');
+const call = padRow();
 
 console.log(call);
