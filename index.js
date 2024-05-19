@@ -16,18 +16,15 @@ for (const row of rows) {
 
 console.log(result);
 
-// If you try to add a console.log(test) call below your padRow function, you would see an error. This is because test is defined in the local scope, meaning you cannot access it in the global scope (outside of the padRow function).
+// In order to know how to format a row, your padRow function will need to know which row number you are on, and how many rows in total are being generated.
 
-// Returning a value from a function brings that value into the scope where the function was called. To bring your "Testing" value from the padRow function into the global scope, update your return statement to return only the test variable.
+// The best way to do this is by creating function parameters for them. Give your padRow function a rowNumber and rowCount parameter. Multiple parameters are separated by a comma:
 
-// Now your call variable has the value "Testing". But your function is no longer using the name parameter.
+// function name(first, second) {
 
-// Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
+// };
 
-function padRow(name) {
-	const test = 'Testing';
-	return test;
-}
+function padRow(rowNumber, rowCount) {}
 
 const call = padRow();
 
