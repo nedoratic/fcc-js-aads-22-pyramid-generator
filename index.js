@@ -2,16 +2,20 @@ const character = '#';
 const count = 8;
 const rows = [];
 
-// You should now see the same bunch of characters in your console. Your padRow function is doing the exact same thing you were doing earlier, but now it's in a reusable section of its own.
+// Now it is time for a bit of math. Consider a three-row pyramid. If we want it centered, it would look something like:
 
-// Use the addition operator to concatenate a blank space " " to the beginning and end of your repeated character string.
+// ··#··
+// ·###·
+// #####
 
-// Remember that you can use the + operator to concatenate strings like this:
+// Empty spaces have been replaced with interpuncts, or middle dots, for readability. If you extrapolate the pattern, you can see that the spaces at the beginning and end of a row follow a pattern.
 
-// " " + "string"
+// Update your blank space strings to be repeated rowCount - rowNumber times.
+
+// Open up the console to see the result.
 
 function padRow(rowNumber, rowCount) {
-	return ' ' + character.repeat(rowNumber) + ' ';
+	return ' '.repeat(rowCount - rowNumber) + character.repeat(rowNumber) + ' '.repeat(rowCount - rowNumber);
 }
 
 for (let i = 0; i < count; i = i + 1) {
