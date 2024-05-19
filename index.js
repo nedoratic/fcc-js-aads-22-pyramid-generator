@@ -2,17 +2,17 @@ const character = '#';
 const count = 8;
 const rows = [];
 
+// You should now see the same bunch of characters in your console. Your padRow function is doing the exact same thing you were doing earlier, but now it's in a reusable section of its own.
+
+// Use the addition operator to concatenate a blank space " " to the beginning and end of your repeated character string.
+
+// Remember that you can use the + operator to concatenate strings like this:
+
+// " " + "string"
+
 function padRow(rowNumber, rowCount) {
-	return character.repeat(rowNumber);
+	return ' ' + character.repeat(rowNumber) + ' ';
 }
-
-// Your padRow function has two parameters which you defined. Values are provided to those parameters when a function is called.
-
-// The values you provide to a function call are referred to as arguments, and you pass arguments to a function call. Here's a function call with "Hello" passed as an argument:
-
-// test("Hello");
-
-// Pass i + 1 and count as the arguments to your padRow call. Like parameters, arguments are separated by a comma.
 
 for (let i = 0; i < count; i = i + 1) {
 	rows.push(padRow(i + 1, count));
