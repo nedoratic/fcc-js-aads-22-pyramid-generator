@@ -16,15 +16,19 @@ for (const row of rows) {
 
 console.log(result);
 
-// In order to know how to format a row, your padRow function will need to know which row number you are on, and how many rows in total are being generated.
+// Remember in an earlier step, you learned about return values. A function can return a value for your application to consume separately.
 
-// The best way to do this is by creating function parameters for them. Give your padRow function a rowNumber and rowCount parameter. Multiple parameters are separated by a comma:
+// In a function, the return keyword is used to specify a return value. For example, this function would return the value given to the first parameter:
 
-// function name(first, second) {
+// function name(parameter) {
+//   return parameter;
+// }
 
-// };
+// Use the return keyword to return the value of the character variable, repeated rowNumber times.
 
-function padRow(rowNumber, rowCount) {}
+function padRow(rowNumber, rowCount) {
+	return character.repeat(rowNumber);
+}
 
 const call = padRow();
 
