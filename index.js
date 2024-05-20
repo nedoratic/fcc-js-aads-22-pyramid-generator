@@ -6,15 +6,15 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Rather than having to pass i + 1 to your padRow call, you could instead start your loop at 1. This would allow you to create a one-indexed loop.
+// Unfortunately, now the bottom of the pyramid has disappeared. This is because you have created another off-by-one error.
 
-// Update your iterator to start at 1 instead of 0.
+// Your original loop went for i values from 0 to 7, because count is 8 and your condition requires i to be less than count. Your loop is now running for i values from 1 to 7.
 
-// The pyramid looks a little funny now. Because you are starting the loop at 1 instead of 0, you do not need to add one to i when you pass it to padRow.
+// Your loop needs to be updated to run when i is 8, too. Looking at your logic, this means your loop should run when i is less than or equal to count. You can use the less than or equal to operator <= for this.
 
-// Update the first argument of your padRow call to be i.
+// Update your loop condition to run while i is less than or equal to count.
 
-for (let i = 1; i < count; i++) {
+for (let i = 1; i <= count; i++) {
 	rows.push(padRow(i, count));
 }
 
