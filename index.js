@@ -6,16 +6,16 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Because you are only increasing i by 1, you can use the increment operator ++. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, test would become 8 here:
+// Rather than having to pass i + 1 to your padRow call, you could instead start your loop at 1. This would allow you to create a one-indexed loop.
 
-// let test = 7;
+// Update your iterator to start at 1 instead of 0.
 
-// test++;
+// The pyramid looks a little funny now. Because you are starting the loop at 1 instead of 0, you do not need to add one to i when you pass it to padRow.
 
-// Replace your addition assignment with the increment operator for your loop iteration.
+// Update the first argument of your padRow call to be i.
 
-for (let i = 0; i < count; i++) {
-	rows.push(padRow(i + 1, count));
+for (let i = 1; i < count; i++) {
+	rows.push(padRow(i, count));
 }
 
 let result = '';
