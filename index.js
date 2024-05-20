@@ -6,17 +6,15 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Your pyramid generator now functions as expected. But this is an excellent opportunity to further explore the code you have written.
+// Because you are only increasing i by 1, you can use the increment operator ++. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, test would become 8 here:
 
-// The addition operator is not the only way to add values to a variable. The addition assignment operator can be used as shorthand to mean "take the original value of the variable, add this value, and assign the result back to the variable." For example, these two statements would yield the same result:
+// let test = 7;
 
-// test = test + 1;
+// test++;
 
-// test += 1;
+// Replace your addition assignment with the increment operator for your loop iteration.
 
-// Update your iterator statement in the for loop to use addition assignment.
-
-for (let i = 0; i < count; i += 1) {
+for (let i = 0; i < count; i++) {
 	rows.push(padRow(i + 1, count));
 }
 
