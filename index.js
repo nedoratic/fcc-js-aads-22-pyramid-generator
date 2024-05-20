@@ -6,16 +6,18 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Comments can be helpful for explaining why your code takes a certain approach, or leaving to-do notes for your future self.
+// JavaScript also has support for multi-line comments. A multi-line comment starts with /* and ends with */.
 
-// In JavaScript, you can use // to leave a single-line comment in your code.
+// Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.
 
-// Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.
+// Use /* and */ to turn your current for loop, including the body, into a multi-line comment.
 
 // Change the loop type from a for loop to a while loop.
-for (let i = 1; i <= count; i++) {
-	rows.push(padRow(i, count));
-}
+/*
+    for (let i = 1; i <= count; i++) {
+	    rows.push(padRow(i, count));
+    }
+*/
 
 let result = '';
 
