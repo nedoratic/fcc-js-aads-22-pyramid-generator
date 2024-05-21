@@ -18,13 +18,11 @@ let continueLoop = false;
 
 let done = 0;
 
-// Right now, if you change continueLoop to true, your while loop will run forever. This is called an infinite loop, and you should be careful to avoid these. An infinite loop can lock up your system, requiring a full restart to escape.
+// The equality operator can lead to some strange behavior in JavaScript. For example, "0" == 0 is true, even though one is a string and one is a number.
 
-// To avoid this, start by using the increment operator to increase the value of the done variable inside your loop.
+// The strict equality operator === is used to check if two values are equal and share the same type. As a general rule, this is the equality operator you should always use. With the strict equality operator, "0" === 0 becomes false, because while they might have the same value of zero, they are not of the same type.
 
-// The equality operator == is used to check if two values are equal. To compare two values, you'd use a statement like value == 8.
-
-// Add an if statement to your loop. The statement should check if done is equal to count using the equality operator.
+// Update your done == count condition to use the strict equality operator.
 
 while (continueLoop) {
 	done++;
