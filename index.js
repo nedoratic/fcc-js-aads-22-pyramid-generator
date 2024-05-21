@@ -22,9 +22,23 @@ function padRow(rowNumber, rowCount) {
 
 // Try changing your if condition to an empty string "", which is a falsy value.
 
-if ('false') {
-	console.log('Condition is true');
-}
+// The text is gone again! Empty strings evaluate to false, making them a falsy value. You will learn more about truthy and falsy values in future projects.
+
+// For now, remove your if statement entirely. Use let to declare a continueLoop variable and assign it the boolean false. Then use let to declare a done variable and assign it the value 0.
+
+let continueLoop = false;
+
+let done = 0;
+
+// A while loop will run over and over again until the condition specified is no longer true. It has the following syntax:
+
+// while (condition) {
+//    logic;
+// }
+
+// Use that syntax to declare a while loop with continueLoop as the condition. The body should be empty.
+
+while (continueLoop) {}
 
 let result = '';
 
