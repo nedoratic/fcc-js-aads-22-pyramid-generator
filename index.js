@@ -24,10 +24,19 @@ let done = 0;
 
 // Update your done == count condition to use the strict equality operator.
 
+// When done has reached the value of count, we want the loop to stop executing.
+
+// Inside your if body, assign the boolean false to your continueLoop variable.
+
+// To make your pyramid generate again, push the result of calling padRow with done and count as the arguments to your rows array, similar to what you did in your first loop.
+
 while (continueLoop) {
 	done++;
 
+	rows.push(padRow(done, count));
+
 	if (done === count) {
+		continueLoop = false;
 	}
 }
 
