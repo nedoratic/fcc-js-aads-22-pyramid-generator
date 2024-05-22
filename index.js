@@ -6,19 +6,19 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// TODO: use a different type of loop
-
 /*
     for (let i = 1; i <= count; i++) {
         rows.push(padRow(i, count));
     }
 */
 
-// Now you no longer need your done variable. Remove the increment operation from your loop, and the variable declaration for done.
+/*
+    while (rows.length < count) {
+        rows.push(padRow(rows.length + 1, count));
+    }
+*/
 
-while (rows.length < count) {
-	rows.push(padRow(rows.length + 1, count));
-}
+// TODO: Invert pyramid
 
 let result = '';
 
