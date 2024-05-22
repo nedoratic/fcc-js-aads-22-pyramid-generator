@@ -16,22 +16,17 @@ function padRow(rowNumber, rowCount) {
 
 let done = 0;
 
-// Your pyramid generator is still working. However, it could be possible to end up with an infinite loop again.
+// You can also replace the done reference in your padRow call.
 
-// Because you are only checking if done is not equal to count, if done were to be larger than count your loop would go on forever.
+// Note that rows.length here would give you an off-by-one error, because done is incremented before the call.
 
-// Update your loop's condition to check if done is less than or equal to count.
+// So you'll need to replace done here with rows.length + 1. When you do this, you may see a Range Error, because we've created another off-by-one error.
 
-// Using done to track the number of rows that have been generated is functional, but you can actually clean up the logic a bit further.
+// You'll need to change the while condition to use the less than operator, instead of the less than or equal operator.
 
-// Arrays have a special length property that allows you to see how many values, or elements, are in the array. You would access this property using syntax like myArray.length.
-
-// Update your condition to check if rows.length is less than or equal to count.
-
-while (rows.length <= count) {
+while (rows.length < count) {
 	done++;
-
-	rows.push(padRow(done, count));
+	rows.push(padRow(rows.length + 1, count));
 }
 
 let result = '';
