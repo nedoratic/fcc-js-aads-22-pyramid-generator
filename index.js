@@ -20,11 +20,11 @@ function padRow(rowNumber, rowCount) {
 
 // TODO: Invert pyramid
 
-// Because you are going to loop in the opposite direction, your loop needs to run while i is greater than 0. You can use the greater than operator > for this.
+// Your iteration statement is also going to be different. Instead of adding 1 to i with each loop, you need to subtract 1.
 
-// Set your loop's condition to run when i is greater than 0.
+// Like you did earlier with i = i + 1, update your iteration statement to give i the value of subtracting 1 from itself.
 
-for (let i = count; i > 0; false) {}
+for (let i = count; i > 0; i = i - 1) {}
 
 let result = '';
 
