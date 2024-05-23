@@ -20,11 +20,11 @@ function padRow(rowNumber, rowCount) {
 
 // TODO: Invert pyramid
 
-// Again, push the result of calling padRow with your i and count variables to your rows array.
+// Because you are only subtracting one from i, you can use the decrement operator --.
 
-// Open up the console to see the upside-down pyramid.
+// Replace your subtraction assignment with the decrement operator.
 
-for (let i = count; i > 0; i = i - 1) {
+for (let i = count; i > 0; i--) {
 	rows.push(padRow(i, count));
 }
 
