@@ -24,19 +24,27 @@ function padRow(rowNumber, rowCount) {
     }
 */
 
-// The .unshift() method of an array allows you to add a value to the beginning of the array, unlike .push() which adds the value at the end of the array. Here is an example:
+// Notice that like .push(), .unshift() returns the new length of the array after the element is added.
+
+// Arrays also have a .shift() method. This will remove the first element of the array, unlike .pop() which removes the last element. Here is an example of the .shift() method:
 
 // const numbers = [1, 2, 3];
-// numbers.unshift(5);
-// The numbers array would now be [5, 1, 2, 3].
+// numbers.shift();
+// The numbers array would be [2, 3].
 
-// Use const to declare an unshifted variable, and assign it the result of calling .unshift() on your numbers array. Pass 5 as the argument. Then print your unshifted variable.
+// Declare a shifted variable, assign it the result of calling .shift() on your numbers array, and print the variable.
 
 const numbers = [1, 2, 3];
 
 const unshifted = numbers.unshift(5);
 
+const shifted = numbers.shift();
+
 console.log(numbers);
+
+console.log(unshifted);
+
+console.log(shifted);
 
 let result = '';
 
