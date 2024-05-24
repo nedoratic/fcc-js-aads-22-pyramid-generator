@@ -2,17 +2,17 @@ const character = '#';
 const count = 8;
 const rows = [];
 
-// What if you had a way to toggle between an inverted pyramid and a standard pyramid?
-
-// Start by declaring an inverted variable, and assigning it the value true. You are not changing this variable in your code, but you will need to use let so our tests can modify it later.
-
 let inverted = true;
 
 function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
+// Use an if statement to check if inverted is true. Remember that you do not need to use an equality operator here.
+
 for (let i = 1; i <= count; i++) {
+	if (inverted) {
+	}
 	rows.unshift(padRow(i, count));
 }
 
