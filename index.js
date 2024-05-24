@@ -8,11 +8,25 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Now move your .unshift() call into your if block.
+// Sometimes you will want to run different code when an if condition is false. You can do this by adding an else block. An else block will only evaluate if the if block does not evaluate.
+
+// The syntax to add an else block is:
+
+// if (condition) {
+//   logic
+// } else {
+//   logic
+// }
+
+// Add an else block to your if block.
+
+// When inverted is false, you want to build a standard pyramid. Use .push() like you have in previous steps to achieve this.
 
 for (let i = 1; i <= count; i++) {
 	if (inverted) {
 		rows.unshift(padRow(i, count));
+	} else {
+		rows.push(padRow(i, count));
 	}
 }
 
