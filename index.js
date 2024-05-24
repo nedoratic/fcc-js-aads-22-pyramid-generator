@@ -8,12 +8,12 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-// Use an if statement to check if inverted is true. Remember that you do not need to use an equality operator here.
+// Now move your .unshift() call into your if block.
 
 for (let i = 1; i <= count; i++) {
 	if (inverted) {
+		rows.unshift(padRow(i, count));
 	}
-	rows.unshift(padRow(i, count));
 }
 
 /*
