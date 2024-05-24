@@ -6,11 +6,13 @@ function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
 
-/*
-    for (let i = 1; i <= count; i++) {
-        rows.push(padRow(i, count));
-    }
-*/
+// Sometimes you may wish to bring back previous code that you commented out. You can do so by removing the /* and */ around that code. This is called uncommenting.
+
+// Uncomment only your first for loop. Leave the single line comment and the other two multi line comments in place.
+
+for (let i = 1; i <= count; i++) {
+	rows.push(padRow(i, count));
+}
 
 /*
     while (rows.length < count) {
@@ -23,28 +25,6 @@ function padRow(rowNumber, rowCount) {
         rows.push(padRow(i, count));
     }
 */
-
-// Notice that like .push(), .unshift() returns the new length of the array after the element is added.
-
-// Arrays also have a .shift() method. This will remove the first element of the array, unlike .pop() which removes the last element. Here is an example of the .shift() method:
-
-// const numbers = [1, 2, 3];
-// numbers.shift();
-// The numbers array would be [2, 3].
-
-// Declare a shifted variable, assign it the result of calling .shift() on your numbers array, and print the variable.
-
-const numbers = [1, 2, 3];
-
-const unshifted = numbers.unshift(5);
-
-const shifted = numbers.shift();
-
-console.log(numbers);
-
-console.log(unshifted);
-
-console.log(shifted);
 
 let result = '';
 
