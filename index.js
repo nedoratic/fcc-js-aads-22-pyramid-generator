@@ -1,16 +1,17 @@
-const character = '#';
-const count = 8;
-const rows = [];
+// Nice work! Experiment with different values for your character, count, and inverted variables.
 
-let inverted = true;
+// When you are ready to move on to your next project, set character to "!", count to 10, and inverted to false to continue.
+
+// Congratulations on completing your first JavaScript project!
+
+const character = '!';
+const count = 10;
+const rows = [];
+let inverted = false;
 
 function padRow(rowNumber, rowCount) {
 	return ' '.repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + ' '.repeat(rowCount - rowNumber);
 }
-
-// Your pyramid generator is now in a finished state, with more functionality than you originally planned! The next step is to clean up your code.
-
-// Remove all comments, both single- and multi-line, from your code.
 
 for (let i = 1; i <= count; i++) {
 	if (inverted) {
